@@ -1,0 +1,27 @@
+$color-primary: #999999;
+$color-secondary: #ffffff;
+$color-light-blue: #6666ff;
+
+$color-border: #aaaaaa;
+$color-body: #fcfcfc;
+
+html {
+  line-height: 1.4;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: av_Font;
+  font-size: 2.2rem;
+  background-color: $color-body;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+li {
+  margin: 1rem 0;
+}
