@@ -9,6 +9,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/main.css">
   <title>Atanas Vihrogonov | Portfolio</title>
 </head>
@@ -85,7 +86,7 @@
           <div class="project-preview__img">
             <figure class="overlap-img">
               <a href="https://vstoreapp.herokuapp.com/#/" target="_blank">
-                <img src="/Images/project1.jpeg" alt="">
+                <img data-aos="fade-right" src="/Images/project1.jpeg" alt="">
               </a>
             </figure>
           </div>
@@ -103,14 +104,14 @@
               <a class="btn" href="https://vstoreapp.herokuapp.com/#/" target="_blank">View Live</a>
           </div>
         </div>
-        
+
         <hr class="hr-style"></hr>
 
         <div class="project-preview bottom"> 
           <div class="project-preview__img">
             <figure class="overlap-img">
               <a href="https://documenter.getpostman.com/view/12610761/TVKBYdic#5e27aa90-ee55-4d75-8fa2-ae5860b23d70" target="_blank">
-                <img src="Images/project2.jpeg" alt="">
+                <img data-aos="fade-left" src="Images/project2.jpeg" alt="">
               </a>
             </figure>
           </div>
@@ -156,6 +157,13 @@
   <footer class="footer">
     <p> Copyright &copy; 2020 Atanas Vihrogonov</p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 80,
+      duration: 1500
+    });
+  </script>
   <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="sweet-scroll.js"></script>
   <script src="script.js"></script>

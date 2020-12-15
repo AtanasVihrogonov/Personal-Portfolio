@@ -33,7 +33,7 @@ a:hover {
   margin: 0 auto;
   transform: translate(-50%, -50%); }
   .header-image {
-    background: #d4d5e5;
+    background: #dedfeb;
     width: 250px;
     border-radius: 50%; }
   .header-title {
@@ -90,7 +90,7 @@ a:hover {
 
 .down .icon:active,
 .down .icon:hover {
-  color: #454875; }
+  color: #535252; }
 
 /**** ABOUT ME ****/
 .about p:nth-child(2) {
@@ -223,10 +223,19 @@ section {
   background-image: linear-gradient(to right, rgba(247, 244, 244, 0), rgba(177, 174, 174, 0.623), rgba(110, 108, 108, 0)); }
 
 /* Media Query */
-@media only screen and (min-width: 550px) {
+@media screen and (min-width: 550px) {
   .content {
     width: 80%; }
   .content h1 {
     font-size: 3.2rem; }
   .content h2 {
     font-size: 2.5rem; } }
+
+@media screen and (max-width: 400px) {
+  .header-icons {
+    display: none; }
+  .header-image {
+    width: 200px; }
+  .content {
+    width: 90%;
+    font-size: inherit; } }

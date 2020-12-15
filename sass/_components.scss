@@ -10,7 +10,7 @@
   transform: translate(-50%, -50%);
 
   &-image {
-    background: $color-secondary;
+    background: #dedfeb;
     width: 250px;
     border-radius: 50%;
   }
@@ -74,7 +74,7 @@
 }
 .down .icon:active,
 .down .icon:hover {
-  color: $color-dark-purple;
+  color: #535252;
 }
 
 /**** ABOUT ME ****/
