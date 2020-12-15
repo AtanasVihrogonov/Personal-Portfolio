@@ -23,5 +23,14 @@ h1 {
 }
 
 li {
+  list-style-type: none;
   margin: 1rem 0;
 }
+
+// a {
+//   color: $color-primary;
+// }
+a:hover {
+  text-decoration: none;
+}
+

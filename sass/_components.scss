@@ -78,3 +78,24 @@
 }
 
 /**** ABOUT ME ****/
+.resume {
+  margin: 4rem 1rem;
+}
+.button {
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $color-dark-purple;
+  transition: all 0.7s;
+  font-size: 20px;
+  text-decoration: none;
+}
+.button:active,
+.button:hover {
+  background-color: $color-dark-purple;
+  color: $color-body;
+}
+
+/**** PROJECTS ****/
+
+
