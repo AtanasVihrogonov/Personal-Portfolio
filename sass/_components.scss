@@ -78,24 +78,89 @@
 }
 
 /**** ABOUT ME ****/
-.resume {
-  margin: 4rem 1rem;
+.about {
+  p:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+  .resume {
+    margin: 4rem 1rem;
+    a {
+      color:$color-dark-purple;
+    }
+  }
+  .button {
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $color-dark-purple;
+    transition: all 0.7s;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .button:active,
+  .button:hover {
+    background-color: $color-dark-purple;
+    color: $color-body;
+  }
 }
-.button {
-  height: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid $color-dark-purple;
-  transition: all 0.7s;
-  font-size: 20px;
-  text-decoration: none;
-}
-.button:active,
-.button:hover {
-  background-color: $color-dark-purple;
-  color: $color-body;
+/**** SKILLS ****/
+.skills,
+.contact {
+  ul {
+    padding-left: 0;
+  }
 }
 
 /**** PROJECTS ****/
+.projects-content {
+  padding-bottom: 0;
+
+  .project-preview {
+    margin: 2.5rem 0;
+    .overlap-img {
+      margin: 0;
+    }
+    .content-publish {
+      display: flex;
+      margin-top: 1.1rem;
+      margin-bottom: 2rem;
+      a {
+        color: $color-primary;
+        text-decoration: underline;
+        margin-left: 0.5rem;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $color-dark-purple;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: 2.2rem;
+  background: $color-dark-purple;
+  color:$color-body;
+  border-radius: 5px;
+  padding: 3px 9px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: $color-body;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 2px $color-dark-purple;
+  color: $color-dark-purple;
+}
+
+.bottom {
+  margin: 4rem 0 4rem 0;
+}
+
+
+
+
+
+
+
 
 
