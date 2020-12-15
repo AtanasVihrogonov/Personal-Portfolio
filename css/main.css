@@ -15,9 +15,91 @@ h1 {
 li {
   margin: 1rem 0; }
 
+/**** HEADER ****/
+.header {
+  z-index: 1;
+  text-align: center;
+  color: #d4d5e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%); }
+  .header-image {
+    background: #d4d5e5;
+    width: 250px;
+    border-radius: 50%; }
+  .header-title {
+    font-size: 5rem;
+    line-height: 1;
+    display: block;
+    color: #d4d5e5; }
+  .header-description {
+    font-size: 25px;
+    display: block;
+    line-height: 1;
+    color: #d4d5e5;
+    margin-top: 10px; }
+  .header-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .header-icons .icon {
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid #d4d5e5;
+      transition: all 0.7s;
+      font-size: 28px;
+      margin: 5px; }
+    .header-icons .icon:active,
+    .header-icons .icon:hover {
+      color: #191a2a;
+      background: #d4d5e5; }
+
+.down,
+.header-icons .icon {
+  color: #d4d5e5;
+  text-align: center; }
+
+.down {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  cursor: pointer; }
+
+.down .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  animation: pulse 1.3s infinite; }
+
+.down .icon:active,
+.down .icon:hover {
+  color: #454875; }
+
+/**** ABOUT ME ****/
 @font-face {
   font-family: av_Font;
   src: url("/fonts/FuturaPTLight.otf"); }
+
+@keyframes pulse {
+  0%,
+  to {
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0; }
+  50% {
+    filter: none;
+    opacity: 1;
+    top: -10px; } }
 
 #particles-js {
   background: #191a2a;

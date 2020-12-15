@@ -2,6 +2,19 @@
   font-family: av_Font;
   src: url("/fonts/FuturaPTLight.otf");
 }
+@keyframes pulse {
+  0%,
+  to {
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    top: 0;
+  }
+  50% {
+    filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+}
 
 #particles-js {
   background: $color-primary;
