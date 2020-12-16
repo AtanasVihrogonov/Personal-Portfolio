@@ -1,3 +1,43 @@
+/* ==== Light/Dark Theme Toggle ==== */
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox:checked + .label {
+  background-color: #c0c0c0b7; 
+}
+.checkbox:checked + .label .ball { transform: translateX(24px); }
+.label {
+  background-color: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #dedfeb;
+  border-radius: 50px;
+  position: relative;
+  height: 1.6rem;
+  width: 44px;
+  transform: scale(1.1);
+}
+.ball {
+  background-color: $color-body;
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  border-radius: 50%;
+  height: 2.4rem;
+  width: 2.4rem;
+  transition: transform 0.2s linear;
+}
+/* ==== /end ==== */
+
 /**** HEADER ****/
 .header {
   z-index: 1;
@@ -68,7 +108,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
+  width: 80px;
   height: 100px;
   animation: pulse 1.3s infinite;
 }
@@ -79,14 +119,10 @@
 
 /**** ABOUT ME ****/
 .about {
-  p:nth-child(2) {
-    margin-bottom: 1rem;
-  }
+  p:nth-child(2) { margin-bottom: 1rem; }
   .resume {
     margin: 4rem 1rem;
-    a {
-      color:$color-dark-purple;
-    }
+    a { color:$color-dark-purple; }
   }
   .button {
     height: 20px;
@@ -101,14 +137,14 @@
   .button:hover {
     background-color: $color-dark-purple;
     color: $color-body;
+    // Dark Theme
+    color:$color-border;
   }
 }
 /**** SKILLS ****/
 .skills,
 .contact {
-  ul {
-    padding-left: 0;
-  }
+  ul { padding-left: 0; }
 }
 
 /**** PROJECTS ****/
@@ -116,9 +152,10 @@
   padding-bottom: 0;
 
   .project-preview {
-    margin: 2.5rem 0;
+    margin: 4rem 0;
+
     .overlap-img {
-      margin: 0;
+      margin: 0 
     }
     .content-publish {
       display: flex;
@@ -128,6 +165,8 @@
         color: $color-primary;
         text-decoration: underline;
         margin-left: 0.5rem;
+        // Dark Theme
+        color: $color-dark-purple;
       }
       a:hover {
         text-decoration: none;
@@ -144,23 +183,67 @@
   border-radius: 5px;
   padding: 3px 9px;
   text-decoration: none;
+  // Dark Theme
+  color:$color-border;
 }
 .btn:hover {
   background: $color-body;
   transition: all 0.2s ease-in-out;
   box-shadow: inset 0 0 0 2px $color-dark-purple;
   color: $color-dark-purple;
+  // Dark Theme
+  background-color: #292c35;
+  box-shadow: inset 0 0 0 2px $color-dark-purple;
 }
 
-.bottom {
-  margin: 4rem 0 4rem 0;
+.second { margin: 4rem 0 4rem 0; }
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  margin-bottom: 16px;
+  h1 {
+    margin: 4rem 0 3rem 0;
+    font-size: 2.8rem;
+    color: $color-primary;
+    text-align: center;
+    text-transform: uppercase;
+    // Dark Theme
+    color: $color-border;
+  }
+  h2 {
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid $color-border;
+    box-shadow: 3px 3px 3px $color-border;
+  }
+  p { margin: 0; }
 }
 
+section {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $color-border;
+}
 
+.about,
+.skills,
+.footer {
+  text-align: center;
+}
 
-
-
-
-
-
-
+.hr-style {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(247, 244, 244, 0),
+    rgba(177, 174, 174, 0.623),
+    rgba(110, 108, 108, 0)
+  );
+}

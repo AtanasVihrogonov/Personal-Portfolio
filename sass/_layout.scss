@@ -1,11 +1,22 @@
-@font-face {
-  font-family: av_Font;
-  src: url("/fonts/FuturaPTLight.otf");
+/**** MEDIA QUERY *****/
+@media screen and (min-width: 550px) {
+  .content { width: 80%; }
+}
+@media screen and (max-width: 500px) {
+  .header{ top: 45%; }
+  .header-image { width: 220px; }
+}
+@media screen and (max-width: 360px) {
+  .header-image { width: 200px; }
+  .header-icons { display: none; }
+  .content {
+    width: 90%;
+    font-size: inherit;
+  }
 }
 
 @keyframes pulse {
-  0%,
-  to {
+  0% {
     filter: alpha(opacity=40);
     opacity: 0.4;
     top: 0;
@@ -17,12 +28,17 @@
   }
 }
 
+@font-face {
+  font-family: av_Font;
+  src: url("/fonts/FuturaPTLight.otf");
+}
+
 #particles-js {
   background: $color-primary;
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -31,72 +47,4 @@
 #particles-js .particles-js-canvas-el {
   width: 100% !important;
   height: 100vh !important;
-}
-
-.content {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 960px;
-  margin-bottom: 16px;
-  h1 {
-    margin: 4rem 0 3rem 0;
-    font-size: 2.2rem;
-    color: $color-primary;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  h2 {
-    margin: 1.5rem 0;
-    font-size: 2rem;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    border: 1px #aaaaaa solid;
-    box-shadow: 5px 5px 5px #aaaaaa;
-  }
-  p {
-    margin: 0;
-  }
-
-}
-
-section {
-  padding-bottom: 40px;
-  border-bottom: 1px #c0c0c0 solid;
-}
-
-.about,
-.skills,
-.footer {
-  text-align: center;
-}
-
-.hr-style {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(247, 244, 244, 0),
-    rgba(177, 174, 174, 0.623),
-    rgba(110, 108, 108, 0)
-  );
-}
-
-
-
-/* Media Query */
-@media screen and (min-width: 550px) {
-  .content { width: 80%; }
-  .content h1 { font-size: 3.2rem; }
-  .content h2 { font-size: 2.5rem; }
-}
-@media screen and (max-width: 400px) {
-  .header-icons { display: none; }
-  .header-image { width: 200px; }
-  .content {
-    width: 90%;
-    font-size: inherit;
-  }
 }
