@@ -48,3 +48,13 @@
   width: 100% !important;
   height: 100vh !important;
 }
+
+// Dark Theme
+body.dark { background-color: #292c35; }
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark li {
+  color: $color-border;
+}
+
