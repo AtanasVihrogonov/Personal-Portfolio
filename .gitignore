@@ -7,3 +7,10 @@ fonts/
 
 # dotenv environment variables file
 .env
+remoteconfig.template.json
+
+# deploy
+.travis.yml
+.firebase/
+.firebaserc
+firebase.json
